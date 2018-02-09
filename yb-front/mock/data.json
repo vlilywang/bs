@@ -1,0 +1,106 @@
+{
+  "haslogin": {},
+  "logout": [],
+  "currentauth": {
+    "token": ["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ"],
+    "roleIds": ["12"],
+    "user": {
+      "name": "lizzz",
+      "account": "lizz_lizz",
+      "email":"lizz@int-yt.vom"
+    },
+    "entities_roles": {
+     "12": {
+       "id":"12",
+       "name": "测试角色",
+       "menu": [
+         {
+           "name": "首页",
+           "url": "/app/home",
+           "id": "10089",
+           "pid": "-1",
+           "orderNum": 1,
+           "children": []
+         },
+         {
+           "name": "检索",
+           "url": "/app/search",
+           "id": "10091",
+           "pid": "-1",
+           "disabled": true,
+           "orderNum": 2,
+           "children": []
+         }
+       ]
+     }
+    },
+    "positionIds": ["13"],
+    "entities_positions": {
+      "13": {
+        "id":"13",
+        "name": "管理岗",
+        "code": "glg",
+        "roleIds": ["13"],
+        "entities_roles": {
+          "13": {
+            "id":"13",
+            "name": "测试角色",
+            "menu": [
+              {
+                "name": "指令",
+                "url": "/app/order/uncheckmsg",
+                "id": "10092",
+                "pid": "-1",
+                "orderNum": 3,
+                "children": [
+                  {
+                    "name": "未审核账户",
+                    "url": "/app/order/uncheckuser",
+                    "id": "1009201",
+                    "pid": "10092",
+                    "children": [],
+                    "orderNum": 31
+                  },
+                  {
+                    "name": "未审核消息",
+                    "url": "/app/order/uncheckmsg",
+                    "id": "1009202",
+                    "pid": "10092",
+                    "children": [],
+                    "orderNum": 32
+                  },
+                  {
+                    "name": "已审核账户",
+                    "url": "/app/order/checkuser",
+                    "id": "1009203",
+                    "pid": "10092",
+                    "children": [],
+                    "orderNum": 33
+                  },
+                  {
+                    "name": "已审核消息",
+                    "url": "/app/order/checkmsg",
+                    "id": "1009204",
+                    "pid": "10092",
+                    "children": [],
+                    "orderNum": 34
+                  },
+                  {
+                    "name": "预警",
+                    "url": "/app/order/alarm",
+                    "id": "1009205",
+                    "pid": "10092",
+                    "children": [],
+                    "orderNum": 35
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "children": [],
+        "accountList": []
+      }
+    }
+  }
+}
