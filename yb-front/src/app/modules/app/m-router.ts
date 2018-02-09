@@ -21,6 +21,11 @@ export  const ROUTE_CONFIG: Routes = [{
       loadChildren: 'app/modules/app/modules/user/user.module#UserModule',
     },
     {
+      path: 'examine',
+      pathMatch: 'full',
+      loadChildren: 'app/modules/app/modules/user/examine/examine.module#ExamineModule',
+    },
+    {
       path: 'message',
       pathMatch: 'full',
       loadChildren: 'app/modules/app/modules/message/message.module#MessageModule',

@@ -11,14 +11,15 @@ export class CurrentAccountService {
   private headers = new HttpHeaders({ 'content-Type': 'application/json' });
   constructor(
     private http: HttpClient,
+    private _http: Http,
     private router: Router,
   ) { }
 
-// getUser(id: number): Promise<User>{
-//     const url = ``;
-//     return this.http.get(url)
-//     .toPromise()
-//     .then(response => response.json().data as User);
-// }
+  getUser(id: number): Promise<User>{
+    const url = ``;
+    return this._http.get(url)
+    .toPromise()
+    .then(response => response.json().data as User);
+  }
 
 }
